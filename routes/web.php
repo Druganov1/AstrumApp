@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Livewire\Aanvraagformulier;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +21,15 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+
+
+Route::get('/formulier', function () {
+    return view('Aanvraagformulier');
+});
+
+Route::get('/registraties', function () {
+    return view('Registraties');
+});
+
+
 

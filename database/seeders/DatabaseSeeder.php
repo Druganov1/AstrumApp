@@ -12,6 +12,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // add the datafiller factory
+        \App\Models\FormRegistration::factory(5)->create();
+
+
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
